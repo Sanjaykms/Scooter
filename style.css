@@ -181,6 +181,7 @@ section .feat .feat-in .feat-inner h2{
 section .feat .feat-in .feat-inner p{
     opacity: 0.6;
     margin: 10px 0;
+    padding:10px 35px;
 }
 @media (max-width:780px) {
     section nav h1{
