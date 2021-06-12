@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select:none;
 }
 section{
     min-height: 100vh;
@@ -76,7 +77,6 @@ section nav .about .us .inner{
     overflow: hidden;
     transition: 0.3s;
     z-index: 99;
-    user-select:none;
 }
 section nav .about .us .inner a:hover{
     background-color: #fed9be;
