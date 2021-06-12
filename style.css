@@ -1,0 +1,241 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    min-height: 100vh;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+section nav h1{
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+section nav .about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section nav .about .nav-img{
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+section nav .about .nav-img img{
+    width: 50px;
+    border-radius: 50%;
+}
+section nav .about .nav-img:hover{
+    background-color: rgb(235, 235, 235);
+}
+section nav .about .us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section nav .about .us i{
+    display: none;
+    padding: 10px;
+    background-color:rgb(224, 224, 224);
+}
+section nav .about .us i:active{
+    background-color: #fed9be;
+}
+section nav .about .us .inner a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    padding: 15px 20px;  
+    border-radius: 5px;
+}
+section nav .about .us .inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 0.3s;
+    z-index: 99;
+}
+section nav .about .us .inner a:hover{
+    background-color: #fed9be;
+    color: white;
+}
+section .main{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section .main .one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+section .main .one .main-butt{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 20px;
+}
+section .main .one img{
+    width: 100%;
+}
+section .main .one .main-butt button{
+    padding: 10px 15px;
+    margin: 20px 0;
+    font-size: 24px;
+    border: none;
+    background-color: #ee8777;
+    border-radius: 50%;
+}
+section .main .one .main-butt button:hover{
+    background-color: #fed9be;
+    color: grey;
+}
+section .main .two h2{
+    font-size: 35px;
+    color: #ee8777;
+    letter-spacing: 2px;
+}
+section .main .two p{
+    opacity: 0.6;
+    margin: 15px 0;
+    font-size: 20px;
+}
+section .main .two .order{
+    padding: 20px 0px 20px 30px;
+    font-size: 30px;
+    position: relative;
+    background: transparent;
+    perspective: 1000px;
+}
+section .main .two .order::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background-color: #ee8777;
+    border-radius: 50%;
+    z-index: -3;
+    transform-style: preserve-3d;
+}
+section .main .two .order h5{
+    font-family:sans-serif;
+}
+section .feat{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+section .feat h1{
+    color: #ee8777;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+section .feat .feat-in{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+section .feat .feat-in .feat-inner{
+    text-align: center;
+    margin: 0 20px;
+    max-width: 400px;
+    margin: 20px 0;
+}
+section .feat .feat-in .feat-inner h2{
+    font-weight: 900;
+    font-family: sans-serif;
+}
+section .feat .feat-in .feat-inner p{
+    opacity: 0.6;
+    margin: 10px 0;
+}
+@media (max-width:780px) {
+    section nav h1{
+        margin-left: 10px;
+    }
+    section nav .about .us i{
+        display: initial;
+        margin-right: 10px;
+    }
+    section nav .about .us .inner{
+        position: absolute;
+        top:100%;
+        right: 0;
+        background-color: rgb(224, 224, 224);
+        border-radius: 5px;
+        height: 250%;
+        width: 100%;
+    }
+    section nav .about .us .inner a{
+        width: 100vw;
+    }
+    section nav .about .us{
+        display: block;
+    }
+    .none{
+        height: 0 !important;
+    }
+    section .main .one .main-butt button{
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    section .main .two {
+        margin-top: 30px;
+        padding: 10px;
+    }
+    section .main .two h2{
+        font-size: 25px;
+    }
+    section .main .two p{
+        font-size: 15px;
+        margin: 5px 0;
+    }
+    section .main .two .order{
+        padding: 10px 0 0 15px;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    section .main .two .order::before{
+        width: 40px;
+        height: 40px;
+    }
+    section .feat .feat-in .feat-inner h2{
+        font-size: 18px;
+    }
+    section .feat .feat-in .feat-inner p{
+        font-size: 13px;
+    }
+}

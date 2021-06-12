@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link href="icon.png" rel="icon" sizes="any">
+    <meta name="theme-color" content="#fed9be;">
+    <title>SCOOTER T17</title>
+</head>
+<body>
+    <section>
+        <nav>
+            <h1>Scooter</h1>
+            <div class="about">
+                <div class="us">
+                    <i class="fa fa-bars" id="link"></i>
+                    <div class="inner none">
+                        <a >About us</a>
+                        <a >Scooters</a>
+                        <a >Wheels</a>
+                        <a >Contact</a>
+                    </div>
+                </div>
+                <div class="nav-img">
+                    <img src="user.png">
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="one">
+                <div class="main-butt">
+                    <button><i class="fa fa-arrow-right"></i></button>
+                    <button><i class="fa fa-arrow-right"></i></button>
+                </div>
+                <img src="BannerImage.svg" alt="Images">
+            </div>
+            <div class="two">
+                <h2>Kick</h2>
+                <h2>Scooter T17</h2>
+                <p>Kick scooter T17 is developed exclusively for</p>
+                <p>global shared-scooter service providers</p>
+                <div class="order">
+                    <h5>Order Now</h5>
+                </div>
+            </div>
+        </div>
+        <div class="feat">
+            <h1>Features</h1>
+            <div class="feat-in">
+                <div class="feat-inner">
+                    <h2>Semi Auto Pilot</h2>
+                    <p>This system made you comfortable for driving</p>
+                </div>
+                <div class="feat-inner">
+                    <h2>Sagway Cloud System</h2>
+                    <p>We are offering those new system in the upcoming Days</p>
+                </div>
+                <div class="feat-inner">
+                    <h2>Low Maintainance Cost</h2>
+                    <p>Our Scooter's are low at cost and they are easily available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var s=document.querySelector("section nav .about .us .inner");
+            document.documentElement.addEventListener("click",function(event){
+                if(event.target.id=="link"){
+                    if(s.classList.contains("none")){
+                        s.classList.remove("none");
+                    }
+                    else{
+                        s.classList.add("none");
+                    }
+                }
+                /*else{
+                        s.classList.add("none");
+                    }*/
+            });
+    </script>
+</body>
+</html>
